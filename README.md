@@ -1,10 +1,3 @@
-# software-architecture-tasks
+# Task 5 of software-architecture-tasks
 
-
-Task 1: look [here](https://github.com/Oleksandra2020/software-architecture-tasks/tree/micro_basics)
-
-Task 2: look [here](https://github.com/Oleksandra2020/software-architecture-tasks/tree/hazelcast_basics)
-
-Task 3: look [here](https://github.com/Oleksandra2020/software-architecture-tasks/tree/micro_hazelcast)
-
-Task 4: look [here](https://github.com/Oleksandra2020/software-architecture-tasks/tree/micro_mq)
+Note: Key/Value in Consul did not work out well. Though the value was entered in Consul, the retrieved value in code turned out to be null.

@@ -1,0 +1,3 @@
+GET http://localhost:3405/facade-service
+Accept: text/html
+###

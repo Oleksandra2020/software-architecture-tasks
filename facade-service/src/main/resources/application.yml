@@ -1,0 +1,22 @@
+
+server:
+  port: ${random.int(3000,6100)}
+#  port: 3557
+spring:
+  application:
+    name: facade-service
+    instance:
+      id: ${random.shortuuid}
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      config:
+        enabled: true
+      discovery:
+        prefer-ip-address: true
+        health-check-path: ${server.servlet.context-path:}/actuator/health
+        health-check-interval: 15s
+        health-check-timeout: 90s
+        health-check-critical-timeout: 3m
+        instanceId: ${spring.application.name}-${server.port}-${spring.cloud.client.ip-address}
